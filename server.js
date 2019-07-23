@@ -15,10 +15,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
 // Add the application routes
-require('./app/data/routing/apiRoutes.js')(app);
-require('./app/data/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
 
 // Start listening on PORT
 app.listen(PORT, function() {
-  console.log('FriendFinder app is listening on PORT: ' + PORT);
+  console.log('Friend Finder app is listening on PORT: ' + PORT);
 });
